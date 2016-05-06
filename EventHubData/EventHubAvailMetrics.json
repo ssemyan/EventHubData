@@ -1,0 +1,310 @@
+﻿[
+  {
+    "Name": "size",
+    "Unit": "bytes",
+    "PrimaryAggregation": "Max",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Size"
+  },
+  {
+    "Name": "incoming",
+    "Unit": "Messages",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Incoming Messages"
+  },
+  {
+    "Name": "requests.total",
+    "Unit": "Requests",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Total Requests"
+  },
+  {
+    "Name": "requests.successful",
+    "Unit": "Requests",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Successful Requests"
+  },
+  {
+    "Name": "requests.failed",
+    "Unit": "Requests",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Failed requests"
+  },
+  {
+    "Name": "requests.failed.internalservererror",
+    "Unit": "Requests",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Internal Server Errors"
+  },
+  {
+    "Name": "requests.failed.serverbusy",
+    "Unit": "Requests",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Server Busy Errors"
+  },
+  {
+    "Name": "requests.failed.other",
+    "Unit": "Requests",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Other Errors"
+  },
+  {
+    "Name": "outgoing",
+    "Unit": "Messages",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "Outgoing Messages"
+  },
+  {
+    "Name": "incoming.throughput",
+    "Unit": "bytes",
+    "PrimaryAggregation": "Total",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "incoming.throughput"
+  },
+  {
+    "Name": "outgoing.throughput",
+    "Unit": "bytes",
+    "PrimaryAggregation": "Average",
+    "Rollups": [
+      {
+        "TimeGrain": "00:05:00",
+        "Retention": "02:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "01:00:00",
+        "Retention": "7.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "1.00:00:00",
+        "Retention": "60.00:00:00",
+        "Values": null
+      },
+      {
+        "TimeGrain": "7.00:00:00",
+        "Retention": "730.00:00:00",
+        "Values": null
+      }
+    ],
+    "DisplayName": "outgoing.throughput"
+  }
+]
