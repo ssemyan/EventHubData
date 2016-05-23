@@ -1,7 +1,8 @@
-﻿# https://www.simple-talk.com/cloud/security-and-compliance/windows-azure-management-certificates/
-# https://azure.microsoft.com/en-us/documentation/articles/azure-api-management-certs/
-# http://windowsitpro.com/blog/creating-self-signed-certificates-powershell
+﻿# To use the management APIS you will first need to create a self-signed certificate and then upload it to Azure.
 
+# First Command (this creates the certificate in the local store). Replace [YOUR_DNS_NAME] with the name you wish to use for this certificate. 
+New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName [YOUR_DNS_NAME]
 
-New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName scottse-surf.redmond.corp.microsoft.com
-Export-Certificate -cert Cert:\CurrentUser\My\4CB46D497D538567F3EC18030FC3BACE46E15AE0 -FilePath c:\mycert.cer 
+# After the first command runs, it will report the thumbprint of the new certificate. 
+# Use this thumbprint in the next command to export the certificate so it can be uploaded to Azure
+Export-Certificate -cert Cert:\CurrentUser\My\[THUMBPRINT] -FilePath c:\mycert.cer 
