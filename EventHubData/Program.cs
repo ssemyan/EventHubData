@@ -61,7 +61,7 @@ namespace EventHubData
         {
             Console.WriteLine("Usage: EventHubData showavail|getmetrics");
             Console.WriteLine("   showavail -  show all metrics available for the event hub in the config");
-            Console.WriteLine("   getmetrics - stream metrics every 5 min for the event hub in the config");
+            Console.WriteLine("   getmetrics - get metric values for metrics indicated in the config and also save to a CSV");
         }
 
         private static void GetMetrics()
