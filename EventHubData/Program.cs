@@ -228,19 +228,35 @@ namespace EventHubData
                 request.Method = "GET";
                 request.KeepAlive = true;
 
-                using (var response = request.GetResponse() as HttpWebResponse)
+                try
                 {
-                    if (response != null && response.StatusCode == HttpStatusCode.OK)
+                    using (var response = request.GetResponse() as HttpWebResponse)
                     {
-                        using (var stream = response.GetResponseStream())
+                        if (response != null && response.StatusCode == HttpStatusCode.OK)
                         {
-                            if (stream != null)
+                            using (var stream = response.GetResponseStream())
                             {
-                                StreamReader sr = new StreamReader(stream);
-                                return sr.ReadToEnd();
+                                if (stream != null)
+                                {
+                                    StreamReader sr = new StreamReader(stream);
+                                    return sr.ReadToEnd();
+                                }
                             }
                         }
                     }
+                }
+                catch (WebException ex)
+                {
+                    Console.WriteLine("Bad request: " + ex.Message);
+
+                    // Check for a response
+                    var respStr = ex.Response.GetResponseStream();
+                    if (respStr != null)
+                    {
+                        var respBody = new StreamReader(respStr).ReadToEnd();
+                        Console.WriteLine("Response: " + respBody);
+                    }
+                    throw;
                 }
             }
             return string.Empty;
