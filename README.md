@@ -17,7 +17,10 @@ Usage:
 ```
 EventHubData showavail|getmetrics
 showavail -  show all metrics available for the event hub in the config
-getmetrics - stream metrics every 5 min for the event hub in the config
+getmetrics - get metric values for metrics indicated in the config and also save to a CSV
 ```
 
-When run in *getmetrics* mode, it will create a file in the local directory with the name *EventHubMetrics_[CURRENT_DATE].csv*
+When getting metrics, the application will pause the appropriate amount of time based on the rollup period. For example if the rollup period is set to PT5M then the application 
+will pause for 5 minutes before it tries to retrieve new metric values.
+
+Metric values retrieved will be saved in a file in the local directory with the name *EventHubMetrics_[CURRENT_DATE].csv*
