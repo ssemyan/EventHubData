@@ -23,4 +23,4 @@ getmetrics - get metric values for metrics indicated in the config and also save
 When getting metrics, the application will pause the appropriate amount of time based on the rollup period. For example if the rollup period is set to PT5M then the application 
 will pause for 5 minutes before it tries to retrieve new metric values.
 
-Metric values retrieved will be saved in a file in the local directory with the name *EventHubMetrics_[CURRENT_DATE].csv*
+Only the most recent metric values retrieved will be displayed and saved in a file in the local directory with the name *EventHubMetrics_[CURRENT_DATE].csv*
