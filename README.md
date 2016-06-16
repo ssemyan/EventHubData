@@ -26,5 +26,3 @@ will pause for 5 minutes before it tries to retrieve new metric values.
 Only the most recent metric values retrieved will be displayed and saved in a file in the local directory with the name *EventHubMetrics_[CURRENT_DATE].csv*
 
 This project is referenced in the blog post [Using the Azure REST APIs to Retrieve Event Hub Metrics](https://blogs.msdn.microsoft.com/cloud_solution_architect/2016/05/25/using-the-azure-rest-apis-to-retrieve-event-hub-metrics/)
-
-This project has adopted the [Microsoft Open Source Code of Conduct](http://microsoft.github.io/codeofconduct). For more information see the [Code of Conduct FAQ](http://microsoft.github.io/codeofconduct/faq.md) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
